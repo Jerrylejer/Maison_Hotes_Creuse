@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-family: "Cormorant Upright", serif;
+  color: #d2c61c;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: "Cormorant Upright", serif;
+  color: #55acee;
+  font-weight: 600;
+}
+
+p {
+  color: #32506d;
+  font-weight: 300;
+  text-indent: 20px;
+}
+
+.app {
+  width: 100%;
+  margin: 0 auto;
+  min-width: 200px;
+  background-color: azure;
+}
+
+/*# sourceMappingURL=style.css.map */

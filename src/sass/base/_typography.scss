@@ -1,0 +1,35 @@
+// import Sass
+@import "../abstracts/variables";
+// Imports Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500&display=swap');
+
+// Font variables
+$cormorant: 'Cormorant Upright', serif;
+$montserrat: 'Montserrat', sans-serif;
+
+// styles
+body {
+    font-family: $montserrat;
+    font-weight: normal;
+}
+
+h1 {
+    font-family: $cormorant;
+    color: $gold;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: $cormorant;
+    color: $royalBlue;
+    font-weight: 600;
+}
+
+p {
+    color: $BlueGrey;
+    font-weight: 300;
+    text-indent: 20px;
+}

@@ -1,0 +1,15 @@
+@import 'base/_base';
+@import 'base/_typography';
+@import 'abstracts/_variables';
+
+// Style pour le container app
+.app {
+    width: 100%;
+    margin: 0 auto; 
+    min-width: 200px;
+    background-color: azure;
+}
+
+@media screen and (max-width: 768px) {
+
+}
