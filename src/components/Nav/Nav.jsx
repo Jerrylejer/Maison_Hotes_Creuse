@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { GoHome } from 'react-icons/go';
 import { AiOutlineMenu, AiFillCloseSquare } from 'react-icons/ai';
 import './nav.scss';
 
 const Nav = () => {
-    const [modale, setModal] = useState(true);
+    const [modale, setModal] = useState(false);
 
     const handleClick = () => {
         setModal(!modale);
@@ -15,22 +16,22 @@ const Nav = () => {
             <div className='nav__desktop'>
                 <nav className='desktop__menu'>
                     <ul className='desktop__list'>
-                        <li className='desktop__list-items'>
-                            <a href='#'>
+                        <li >
+                            <a href='/'>
                                 <GoHome />
                             </a>
                         </li>
                         <li className='desktoplist__list-items'>
-                            <a href='#'>Galerie</a>
+                            <a href='/photos'>Galerie</a>
                         </li>
                         <li className='desktoplist__list-items'>
-                            <a href='#'>Calendrier</a>
+                            <a href='/calendrier'>Calendrier</a>
                         </li>
                         <li className='desktoplist__list-items'>
-                            <a href='#'>Informations</a>
+                            <a href='/informations'>Informations</a>
                         </li>
                         <li className='desktoplist__list-items'>
-                            <a href='#'>Contacts</a>
+                            <a href='/contacts'>Contacts</a>
                         </li>
                     </ul>
                 </nav>
@@ -55,21 +56,21 @@ const Nav = () => {
                         <nav className='mobile__menu'>
                             <ul className='mobile__list'>
                                 <li className='mobile__list-items'>
-                                    <a href='#'>
+                                    <a href='/'>
                                         <GoHome />
                                     </a>
                                 </li>
                                 <li className='mobile__list-items'>
-                                    <a href='#'>Galerie</a>
+                                    <a href='/photos'>Galerie</a>
                                 </li>
                                 <li className='mobile__list-items'>
-                                    <a href='#'>Calendrier</a>
+                                    <a href='/calendrier'>Calendrier</a>
                                 </li>
                                 <li className='mobile__list-items'>
-                                    <a href='#'>Informations</a>
+                                    <a href='/informations'>Informations</a>
                                 </li>
                                 <li className='mobile__list-items'>
-                                    <a href='#'>Contacts</a>
+                                    <a href='/contacts'>Contacts</a>
                                 </li>
                             </ul>
                         </nav>
