@@ -1,35 +1,37 @@
+@import '../abstracts/variables';
 // responsive mobile-first
-.photo-route {
-    width: 100%;
-    height: 40vh;
-    object-fit: cover;
-
-    @media screen and (min-width: 1800px) {
-        .photo-route {
-            width: 100%;
-            height: 100vh;
-            object-fit: cover;
-            object-position: top;
-        }
-    }
-    
-    @media screen and (min-width: 992px) {
-        .photo-route {
-            width: 100%;
-            height: 80vh;
-            object-fit: cover;
-        }
-    }
-    
-    @media screen and (min-width: 768px) {
-        .photo-route {
-            width: 100%;
-            height: 60vh;
-            object-fit: cover;
-        }
-    }
-
+.home__main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.home__photo {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
 
+.home__text {
+    padding: $regular_padding;
+}
+
+// MEDIAQUERIES
+@media screen and (min-width: 992px) {
+    .home__photo {
+        object-position: top;
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .home__photo {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+}
 

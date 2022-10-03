@@ -1,0 +1,106 @@
+@import '../abstracts/variables';
+
+// STYLE LISTES
+nav {
+    margin: $small_margin_b;
+}
+
+// NAVIGATION DESKTOPS
+.desktop__list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+    // Animation du menu
+    li {
+        animation-duration: 2s;
+        animation-name: fromRight;
+        animation-timing-function: linear;
+    }
+
+    li a {
+        text-decoration: none;
+        color: $BlueGrey;
+    }
+}
+
+// Animation du menu
+@keyframes fromRight {
+    from {
+        opacity: 0%;
+        margin-left: 150px;
+    }
+
+    to {
+        opacity: 100%;
+        margin-left: 0px;
+    }
+}
+
+// NAVIGATION MOBILE
+// Icone
+.icon {
+    &__container {
+        margin: 10px 0px;
+    }
+
+    &__nav {
+        position: fixed;
+        cursor: pointer;
+        // color: $BlueGrey;
+        color: $royalBlue;
+        z-index: 9999;
+        top: 5px;
+        left: 5px;
+        font-size: 20px;
+    }
+
+    &__nav--lines {
+        color: $goldIcon;
+    }
+}
+
+// Modal
+.modal {
+    background-color: $transpGrey;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.93;
+}
+
+//Menu
+.mobile__list-items {
+    padding: 20px 0px;
+
+    a {
+        text-decoration: none;
+        font-weight: 600;
+        color: $royalBlue;
+    }
+}
+
+//! MEDIAQUERIES
+@media screen and (max-width: 767px) {
+    .nav__mobile {
+        display: block;
+    }
+    .nav__desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav__mobile {
+        display: none;
+    }
+    .nav__desktop {
+        display: block;
+    }
+
+    .icon__container {
+        display: none;
+    }
+}
