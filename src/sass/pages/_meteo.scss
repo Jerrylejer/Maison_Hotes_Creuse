@@ -1,0 +1,14 @@
+@import '../abstracts/variables';
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.meteo {
+    margin-top: -55px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
