@@ -1,0 +1,72 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.swiper {
+    width: 60%;
+    height: 50%;
+    border-radius: 20px;
+    text-align: center;
+    // Sinon apparait au-dessus de la modal menu en version mobile
+    z-index: 0;
+}
+
+.photo {
+    border-radius: 20px;
+    width: 100%;
+
+    &--vert {
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .swiper {
+        width: 993px;
+        height:70%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .swiper {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 767px) {
+    .swiper {
+        width: 700px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 699px) {
+    .swiper {
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 599px) {
+    .swiper {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 499px) {
+    .swiper {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 399px) {
+    .swiper {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 299px) {
+    .swiper {
+        width: 100%;
+    }
+}

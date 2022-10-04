@@ -10,6 +10,7 @@ nav {
     display: flex;
     justify-content: space-around;
     list-style: none;
+    
 
     // Animation du menu
     li {
@@ -69,6 +70,8 @@ nav {
     left: 0;
     width: 100%;
     opacity: 0.93;
+    // Sinon ligne tableau Météo et swiper apparaissent au-dessus
+    z-index: 1;
 }
 
 //Menu
@@ -98,6 +101,7 @@ nav {
     }
     .nav__desktop {
         display: block;
+        z-index: 999;
     }
 
     .icon__container {

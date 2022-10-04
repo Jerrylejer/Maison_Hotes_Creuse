@@ -4,3 +4,9 @@
     margin-top: $regular_margin_t;
     margin-bottom: $small_margin_b;
 }
+
+@media screen and (max-width: 767px) {
+    .header__container {
+        margin-bottom: $regular_margin_b;
+    }
+}
