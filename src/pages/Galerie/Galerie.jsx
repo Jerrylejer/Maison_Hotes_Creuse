@@ -72,7 +72,7 @@ const Galerie = () => {
             >
                 <SwiperSlide>
                     <img className='photo' src={maison} alt='maison' />
-                    <div className='text'>Vue de la terrasse</div>
+                    <div className='text text--big'>Vue de la terrasse</div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img
@@ -88,7 +88,7 @@ const Galerie = () => {
                         src={chambreBeige}
                         alt='chambre_Beige'
                     />
-                     <div className='text text--big'>Chambre Beige</div>
+                    <div className='text text--big'>Chambre Beige</div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img className='photo' src={cuisine1} alt='cuisine' />
@@ -108,7 +108,7 @@ const Galerie = () => {
                         src={salon3}
                         alt='salon3'
                     />
-                     <div className='text'>Petit-salon</div>
+                    <div className='text'>Petit-salon</div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img className='photo' src={salon2} alt='salon2' />
@@ -128,7 +128,7 @@ const Galerie = () => {
                         src={tours}
                         alt='tours'
                     />
-                     <div className='text'>Maison</div>
+                    <div className='text'>Maison</div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img className='photo' src={piscine1} alt='piscine1' />

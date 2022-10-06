@@ -3,7 +3,7 @@
 // bases
 $gold: #d2c61c;
 // Titres et soulignements dégradés
-$gradientGold : linear-gradient(90deg, black 30%, $gold 60%);
+$gradientGold: linear-gradient(90deg, black 30%, $gold 60%);
 // Sous-Titres
 $royalBlue: #55acee;
 // Textes
@@ -21,6 +21,10 @@ $temp: #ed9726;
 // Margins
 // small-margin-bottom (10px)
 $small_margin_b: 10px;
+// regular-margin-bottom (15px)
+$regular_margin_b: 15px;
+// medium-margin-bottom (30px)
+$medium_margin_b: 30px;
 // big-margin-bottom (60px)
 $big_margin_b: 60px;
 // regular-margin-top
