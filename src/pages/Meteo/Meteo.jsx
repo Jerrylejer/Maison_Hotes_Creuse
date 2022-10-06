@@ -3,12 +3,13 @@ import ReactWeather, { useOpenWeather } from 'react-open-weather';
 
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
+import Loader from '../../components/Loader/Loader';
 
 import './meteo.scss';
 
 const Meteo = () => {
     const { data, isLoading, errorMessage } = useOpenWeather({
-        key: process.env.REACT_APP_APIKEY,
+        key: process.env.REACT_APP_WEATHERAPIKEY,
         lat: '46.0263',
         lon: '2.50665',
         lang: 'fr',
@@ -18,8 +19,14 @@ const Meteo = () => {
         <div className='container'>
             <Header />
             <div className='meteo'>
+                {isLoading && (
+                    <>
+                        <Loader />
+                        {errorMessage}
+                    </>
+                )}
                 <ReactWeather
-                    sLoading={isLoading}
+                    // isLoading={isLoading}
                     errorMessage={errorMessage}
                     data={data}
                     lang='fr'

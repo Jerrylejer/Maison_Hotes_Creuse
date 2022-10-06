@@ -1,9 +1,7 @@
-@import '../abstracts/variables';
+@import '../helpers/variables';
 
 .container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+    @include flex_col_100vh;
     justify-content:space-around;
 }
 .meteo {

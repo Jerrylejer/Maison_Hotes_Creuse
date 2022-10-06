@@ -1,12 +1,31 @@
+// base
 @import 'base/_base';
 @import 'base/_typography';
-@import 'abstracts/_variables';
 
-// Style pour le container app
-.app {
-    width: 100%;
-    margin: 0 auto; 
-    min-width: 200px;
-}
+//helpers
+@import 'helpers/_variables';
+@import 'helpers/_mixins';
+
+// components
+@import 'components/button';
+@import 'components/nav';
+@import 'components/loader';
+
+// layouts
+@import 'layouts/footer';
+@import 'layouts/header';
+
+// pages
+@import 'pages/calendrier';
+@import 'pages/contacts';
+@import 'pages/error404';
+@import 'pages/galerie';
+@import 'pages/home';
+@import 'pages/informations';
+@import 'pages/meteo';
+
+
+
+
 
 

@@ -1,4 +1,4 @@
-@import '../abstracts/variables';
+@import '../helpers/variables';
 
 // STYLE LISTES
 nav {
@@ -7,10 +7,14 @@ nav {
 
 // NAVIGATION DESKTOPS
 .desktop__list {
-    display: flex;
-    justify-content: space-around;
+    @include flex_row_spaceAround;
     list-style: none;
-    
+
+    a:hover {
+        border-bottom: 2px solid $gold;
+        padding-bottom: 15px;
+        font-weight: 500;
+    }
 
     // Animation du menu
     li {
@@ -48,16 +52,15 @@ nav {
     &__nav {
         position: fixed;
         cursor: pointer;
-        // color: $BlueGrey;
         color: $royalBlue;
         z-index: 9999;
         top: 5px;
         left: 5px;
         font-size: 20px;
-    }
 
-    &__nav--lines {
-        color: $goldIcon;
+        &--lines {
+            color: $gold;
+        }
     }
 }
 

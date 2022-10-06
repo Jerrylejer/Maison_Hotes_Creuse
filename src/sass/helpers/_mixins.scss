@@ -1,0 +1,23 @@
+// Outils flexbox
+@mixin flex_col_100vh {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex_col_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex_row_spaceAround {
+    display: flex;
+    justify-content: space-around;
+}
+
+// Photos
+@mixin objectCover {
+    width: 100%;
+    object-fit: cover;
+}

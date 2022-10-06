@@ -1,9 +1,7 @@
-@import '../abstracts/variables';
+@import '../helpers/variables';
 
 .logoBox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex_col_center;
     background-color: $lightGold;
 
     &__items {
@@ -12,7 +10,7 @@
 
         &:hover {
             cursor: pointer;
-            }
+        }
         &--facebook {
             color: $royalBlue;
         }
@@ -24,7 +22,6 @@
         &--temp {
             color: $temp;
         }
-
     }
 }
 
