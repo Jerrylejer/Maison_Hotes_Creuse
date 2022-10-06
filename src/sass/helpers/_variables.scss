@@ -1,33 +1,33 @@
-// Couleurs de Typos
-// Titres
+// Couleurs
+
+// bases
 $gold: #d2c61c;
+// Titres et soulignements dégradés
+$gradientGold : linear-gradient(90deg, black 30%, $gold 60%);
 // Sous-Titres
 $royalBlue: #55acee;
 // Textes
 $BlueGrey: #32506d;
-// Background-color
-// Footer
+// Background
 $lightGold: #f4f1d0;
 // Modal
 $transpGrey: #070707;
-
-// Couleurs icônes 
-// mobile-menu
-$gold: #c1b619;
-// footer
+// icônes footer
 $royalBlue: #55acee;
 $temp: #ed9726;
 
-// margins
+// Gutters
+
+// Margins
 // small-margin-bottom (10px)
 $small_margin_b: 10px;
-// small-margin-bottom (10px)
-$regular_margin_b: 60px;
+// big-margin-bottom (60px)
+$big_margin_b: 60px;
 // regular-margin-top
 $regular_margin_t: 15px;
 // big-margin-top
 $big_margin_t: 50px;
 
-// padding
+// Paddings
 // regular-padding
 $regular_padding: 20px;

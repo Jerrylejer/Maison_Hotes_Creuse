@@ -1,12 +1,19 @@
 @import '../helpers/variables';
 
 .container {
-    @include flex_col_100vh;
-    justify-content:space-around;
+    @include flex_col_100;
+    justify-content: space-between;
 }
+
 .meteo {
-    margin-top: -55px;
+    margin-top: -90px;
     padding-right: 15px;
     padding-left: 15px;
+}
 
+@media screen and (min-width: 767px) {
+    .meteo {
+        width: 767px;
+        margin: -50px auto 0px;
+    }
 }

@@ -1,3 +1,10 @@
+// Le loader se pense d'abord en terme de quadrilatere (4 bordures)
+// On détermine l'épaisseur des bordures 
+// bordures L R et Bottom seront grises, Top sera d'une couleur différente
+// On donne la forme ronde à ce quad avec le border-radius 50%
+// On détermine l'échelle de grandeur du spinner avec la width et la height
+// On anime avec avec transform: rotate (+-webkit)
+
 .loader {
     border: 20px solid $royalBlue;
     border-radius: 50%;

@@ -9,13 +9,14 @@ import Footer from '../../components/Footer/Footer';
 import 'swiper/css';
 // 1, 2, 3, 4, ...
 import 'swiper/css/pagination';
-// < >
-import 'swiper/css/navigation';
+// autoplay
+import 'swiper/css/autoplay';
 // import du scss galerie
 import './galerie.scss';
+// Possibilité d'importer le module navigation au besoin < > => import 'swiper/css/navigation';
 
 // Import des modules Swiper
-import { Pagination, Navigation } from 'swiper';
+import { Pagination, Autoplay } from 'swiper';
 
 // Photos
 import chambreRouge from '../../assets/images/chambre1_pf-min.jpg';
@@ -42,27 +43,17 @@ const Galerie = () => {
         <div className='container'>
             <Header />
             <Swiper
-                // pagination={{ type: 'scrollbar' }}
-                // navigation={false}
                 spaceBetween={30}
-                pagination={{clickable: true,}}
-                modules={[Pagination, Navigation]}
+                pagination={{ clickable: true }}
+                modules={[Pagination, Autoplay]}
                 className='swiper'
+                autoplay={{
+                    delay: 3000,
+                }}
+                speed={1500}
                 breakpoints={{
-                    300: {
-                        width: 300,
-                        slidesPerView: 1,
-                    },
-                    400: {
-                        width: 400,
-                        slidesPerView: 1,
-                    },
-                    500: {
-                        width: 500,
-                        slidesPerView: 1,
-                    },
-                    600: {
-                        width: 600,
+                    699: {
+                        width: 100,
                         slidesPerView: 1,
                     },
                     700: {
@@ -80,11 +71,8 @@ const Galerie = () => {
                 }}
             >
                 <SwiperSlide>
-                    <img
-                        className='photo'
-                        src={maison}
-                        alt='maison'
-                    />
+                    <img className='photo' src={maison} alt='maison' />
+                    <div className='text'>Vue de la terrasse</div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img
@@ -92,6 +80,7 @@ const Galerie = () => {
                         src={chambreRouge}
                         alt='chambre_Rouge'
                     />
+                    <div className='text'>Chambre Rouge</div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img
@@ -99,18 +88,19 @@ const Galerie = () => {
                         src={chambreBeige}
                         alt='chambre_Beige'
                     />
+                     <div className='text text--big'>Chambre Beige</div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img className='photo' src={cuisine1} alt='cuisine' />
+                    <div className='text'>Cuisine</div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img className='photo' src={cuisine2} alt='buffet_pdj' />
+                    <div className='text'>Buffet petit-déjeuner</div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img className='photo' src={salon1} alt='salon1' />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <img className='photo' src={salon2} alt='salon2' />
+                    <div className='text'>Petit-salon</div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img
@@ -118,12 +108,19 @@ const Galerie = () => {
                         src={salon3}
                         alt='salon3'
                     />
+                     <div className='text'>Petit-salon</div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img className='photo' src={salon2} alt='salon2' />
+                    <div className='text'>Salle-à-manger</div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img className='photo' src={terrasse1} alt='terrasse1' />
+                    <div className='text'>Terrasse</div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img className='photo' src={terrasse2} alt='terrasse2' />
+                    <div className='text'>Terrasse</div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img
@@ -131,27 +128,35 @@ const Galerie = () => {
                         src={tours}
                         alt='tours'
                     />
+                     <div className='text'>Maison</div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img className='photo' src={piscine1} alt='piscine1' />
+                    <div className='text'>Piscine et transats</div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img className='photo' src={piscine2} alt='piscine2' />
+                    <div className='text'>Autre vue piscine</div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img className='photo' src={piscine3} alt='piscine3' />
+                    <div className='text'>Autre vue piscine</div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img className='photo' src={piscine4} alt='piscine4' />
+                    <div className='text'>Autre vue piscine</div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img className='photo' src={jardin} alt='jardin' />
+                    <div className='text'>Vue sur le jardin</div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img className='photo' src={escaliers} alt='escaliers' />
+                    <div className='text'>Accès terrasse</div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img className='photo' src={cours} alt='cours' />
+                    <div className='text'>Cours et parking</div>
                 </SwiperSlide>
             </Swiper>
             <Footer />

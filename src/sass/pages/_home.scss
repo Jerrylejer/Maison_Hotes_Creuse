@@ -2,7 +2,7 @@
 @import '../helpers/mixins';
 // responsive mobile-first
 .home__main {
-    @include flex_col_100vh;
+    @include flex_col_100;
     justify-content: space-between;
 }
 

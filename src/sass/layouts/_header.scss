@@ -7,6 +7,10 @@
 
 @media screen and (max-width: 767px) {
     .header__container {
-        margin-bottom: $regular_margin_b;
+        margin-bottom: $big_margin_b;
+    }
+
+    .header__container h1 {
+        margin-top: $big_margin_t;
     }
 }

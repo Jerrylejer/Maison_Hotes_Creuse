@@ -1,5 +1,5 @@
 // Outils flexbox
-@mixin flex_col_100vh {
+@mixin flex_col_100 {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -20,4 +20,12 @@
 @mixin objectCover {
     width: 100%;
     object-fit: cover;
+}
+
+// Titres dégradés
+@mixin goldGradient {
+    background: $gradientGold;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
