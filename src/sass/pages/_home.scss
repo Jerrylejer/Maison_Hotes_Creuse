@@ -3,17 +3,16 @@
 // responsive mobile-first
 .home__main {
     @include flex_col_100;
-    justify-content: space-between;
+    justify-content:space-between;
 }
 
 .home__photo {
     @include objectCover;
     height: 450px;
-
 }
 
 .home__text {
-    padding: $regular_padding;
+    padding: $small_padding;
 }
 
 // MEDIAQUERIES

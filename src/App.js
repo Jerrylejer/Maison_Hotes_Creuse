@@ -9,7 +9,7 @@ import Calendrier from './pages/Calendrier/Calendrier';
 import Informations from './pages/Informations/Informations';
 import Contacts from './pages/Contacts/Contacts';
 import Meteo from './pages/Meteo/Meteo';
-import Map from './pages/Map/Map';
+import Plan from './pages/Plan/Plan';
 import Error404 from './pages/Error404/Error404';
 
 import '../src/sass/main.scss';
@@ -26,7 +26,7 @@ function App() {
                     <Route path='/informations' element={<Informations />} />
                     <Route path='/contacts' element={<Contacts />} />
                     <Route path='/meteo' element={<Meteo />} />
-                    <Route path='/plan' element={<Map />} />
+                    <Route path='/plan' element={<Plan />} />
                     {/* path="*" produit une erreur en console, à vérifier plus tard */}
                     <Route path='*' element={<Error404 />} />
                 </Routes>
