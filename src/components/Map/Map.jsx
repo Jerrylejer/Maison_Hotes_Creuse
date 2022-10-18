@@ -33,10 +33,7 @@ const Map = () => {
                         border: 'solid 2px #d2c61c',
                     }}
                 >
-                    <Marker
-                        title={'The marker`s title will appear as a tooltip.'}
-                        position={center}
-                    />
+                    <Marker title={"La Maison d'Odile"} position={center} />
                 </GoogleMap>
             </div>
         </div>

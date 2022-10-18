@@ -1,0 +1,18 @@
+button {
+    padding: 15px 50px;
+    border: none;
+    border-radius: 15px;
+    background-color: $lightGold;
+    -webkit-box-shadow: $buttonShadow;
+    box-shadow: $buttonShadow;
+    transition: 0.5s;
+    color: $BlueGrey;
+    font-size: 16px;
+
+    &:hover {
+        -webkit-box-shadow: $buttonShadowHover;
+        box-shadow: $buttonShadowHover;
+        color: $gold;
+        transition: 0.5s;
+    }
+}

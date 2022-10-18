@@ -1,0 +1,49 @@
+.form {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 30px;
+        padding: 50px 50px;
+        width: 900px;
+        background-color: $lightGold;
+        border-radius: 30px;
+
+        label {
+            width: 100%;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        textarea {
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 15px;
+            padding: 10px;
+
+            &::placeholder {
+                color: red;
+                padding: 10px;
+            }
+        }
+
+        button {
+            margin-top: 15px;
+        }
+    }
+}
