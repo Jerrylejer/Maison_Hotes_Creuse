@@ -26,6 +26,12 @@
             border: none;
             border-radius: 15px;
             margin-bottom: 30px;
+
+            &:focus {
+                border: 2px solid $gold;
+                outline-offset: 0px ;
+                outline: none;
+            }
         }
 
         textarea {
@@ -38,11 +44,17 @@
                 color: $gold;
                 padding: 10px;
             }
-        }
 
-        button {
-            margin-top: 15px;
+            &:focus {
+                border: 2px solid $gold;
+                outline-offset: 0px ;
+                outline: none;
+            }
         }
+    }
+
+    &__button {
+        margin: 15px auto 25px;
     }
 }
 
@@ -68,6 +80,8 @@
     color: red;
 }
 
+
+//MEDIAQUERIES
 @media screen and (min-width: 993px) {
     .form__container {
         width: 993px;

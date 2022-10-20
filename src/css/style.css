@@ -267,6 +267,11 @@ nav {
   border-radius: 15px;
   margin-bottom: 30px;
 }
+.form__container input:focus {
+  border: 2px solid #d2c61c;
+  outline-offset: 0px;
+  outline: none;
+}
 .form__container textarea {
   margin-bottom: 20px;
   border: none;
@@ -277,8 +282,13 @@ nav {
   color: #d2c61c;
   padding: 10px;
 }
-.form__container button {
-  margin-top: 15px;
+.form__container textarea:focus {
+  border: 2px solid #d2c61c;
+  outline-offset: 0px;
+  outline: none;
+}
+.form__button {
+  margin: 15px auto 25px;
 }
 
 #isValid {

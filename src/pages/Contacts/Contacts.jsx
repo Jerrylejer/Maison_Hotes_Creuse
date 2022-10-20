@@ -142,7 +142,7 @@ const Contacts = () => {
                     }}
                     value={message}
                 ></textarea>
-                <button type='submit' onClick={handleSubmit}>
+                <button className='form__button' type='submit' onClick={handleSubmit}>
                     Envoyer
                 </button>
             </form>
