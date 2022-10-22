@@ -40,7 +40,7 @@
     border: none;
     background-color: $BlueGrey;
     padding: 13px 20px;
-    margin: 0;
+    margin: 0 95px;
     cursor: pointer;
 }
 
@@ -142,11 +142,13 @@
 .key {
     display: flex;
     flex-direction: row;
-    margin: 0 absolute;
+    justify-content: space-around;
+    margin: 20px 0 40px;
+    // margin: 0 absolute;
 }
 
 .key .type {
-    margin: 0 10px 0 0;
+    margin: 0 20px 0 0;
 }
 
 .key .type span {
@@ -182,11 +184,19 @@
     .month {
         width: 50%;
     }
+
+    .controls .btn {
+        margin: 0;
+    }
 }
 
 @media (max-width: 768px) {
     .month,
     .twoCol .month {
         width: 100%;
+    }
+
+    .controls .btn {   
+        margin: 0;
     }
 }
