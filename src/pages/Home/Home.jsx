@@ -22,11 +22,7 @@ const Home = () => {
                         />
                     </div>
                     <p className='home__text'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quaerat reiciendis quasi dicta veniam placeat assumenda,
-                        quidem corporis, adipisci eos fugiat distinctio illo
-                        quibusdam, consectetur quas dolorem numquam ducimus ab
-                        deleniti.
+                        <strong>La Maison d'Odile</strong> est idéalement située dans la belle localité creusoise d'Auzances. A quelques minutes à pieds, vous découvrirez <i class='home__innertext'>un village paisible et accueillant</i>, pourvu de l'essentiel en terme de <i class='home__innertext'>petits commerçants (bar-tabac, boulangers, bouchers, pharmacien, ...) </i>, <i class='home__innertext'>son marché hebdomadaire</i> ainsi qu'une <i class='home__innertext'>grande surface équipée d'une station essence</i>. 
                     </p>
                     <Footer />
                 </div>

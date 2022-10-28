@@ -587,6 +587,9 @@ nav {
 .home__text {
   padding: 10px;
 }
+.home__innertext {
+  font-weight: 500;
+}
 
 @media screen and (min-width: 992px) {
   .home__photo {

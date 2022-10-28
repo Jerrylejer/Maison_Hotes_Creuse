@@ -11,9 +11,16 @@
     height: 450px;
 }
 
-.home__text {
-    padding: $small_padding;
+.home {
+    &__text {
+        padding: $small_padding;
+    }
+
+    &__innertext {
+        font-weight: 500;
+    }
 }
+
 
 // MEDIAQUERIES
 @media screen and (min-width: 992px) {
