@@ -5,6 +5,7 @@
 
 .swiper {
     width: 98%;
+    margin-top: -20px;
     border-radius: 20px;
     text-align: center;
     // Sinon apparait au-dessus de la modal menu en version mobile
@@ -22,7 +23,8 @@
 }
 
 .text {
-    margin-top: 60px;
+    margin-top: 20px;
+    margin-bottom: 60px;
     font-size: 30px;
     background: $gradientGold;
     -webkit-text-fill-color: transparent;

@@ -522,6 +522,7 @@ nav {
 
 .swiper {
   width: 98%;
+  margin-top: -20px;
   border-radius: 20px;
   text-align: center;
   z-index: 0;
@@ -537,7 +538,8 @@ nav {
 }
 
 .text {
-  margin-top: 60px;
+  margin-top: 20px;
+  margin-bottom: 60px;
   font-size: 30px;
   background: linear-gradient(90deg, black 30%, #d2c61c 60%);
   -webkit-text-fill-color: transparent;
